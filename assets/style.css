@@ -1,0 +1,126 @@
+/* RESET  */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL  */
+
+hr {
+  width: 60%;
+  margin: 15px;
+  border: 0.5px solid black;
+}
+
+/* HEADER  */
+
+header {
+  color: #f1f1f1;
+  background: #2f2f2f;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid #000;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* BODY  */
+
+body {
+  background: #6b8e23;
+  text-align: center;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 150px 1fr 100px;
+  place-items: center;
+}
+
+main {
+  display: grid;
+  width: 50%;
+  place-items: center;
+  position: relative;
+}
+
+.div-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  place-items: center;
+  width: 60%;
+  cursor: url("hammer.png"), auto;
+}
+
+.hole {
+  height: 100px;
+  width: 100px;
+  background: #8b4513;
+  border-radius: 50px;
+}
+
+.marmot {
+  display: none;
+}
+
+.marmot img {
+  width: 80px;
+}
+
+.score {
+  display: none;
+  font-size: 2rem;
+  margin: 15px;
+}
+
+.timer {
+  display: none;
+  font-size: 1.2rem;
+  margin: 15px;
+}
+
+#div-difficulty {
+  margin: 25px;
+}
+
+#btn-start {
+  background: #6ab04c;
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 999px;
+  border: none;
+  box-shadow: 0px 5px 15px #000;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+#btn-start:hover {
+  transform: scale(1.5);
+}
+
+#btn-start:active {
+  color: #f1f1f1;
+  background: #333;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .div-container {
+    gap: 10px;
+  }
+}
