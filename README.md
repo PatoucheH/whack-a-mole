@@ -5,7 +5,7 @@ This is a simple Whack-a-Mole game, just like the ones you find at fairs! Your g
 
 ## How to Play
 
-When you arrive on the site, you'll need to choose a difficulty level between 1 and 5. The level determines the mole's speed—nothing else.
+When you arrive on the [site](https://patoucheh.github.io/whack-a-mole/), you'll need to choose a difficulty level between 1 and 5. The level determines the mole's speed—nothing else.
 
 ## What It Looks Like
 
